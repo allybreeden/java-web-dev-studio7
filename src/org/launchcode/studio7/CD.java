@@ -1,6 +1,19 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BaseDisc {
+
+    private final String genre;
+
+    public CD(String title, String author, String discType, String productionCo, String genre) {
+        super(title, author, discType, productionCo);
+        this.genre = genre;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+
 
     // TODO: Implement your custom interface.
 

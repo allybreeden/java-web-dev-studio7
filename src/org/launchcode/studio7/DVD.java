@@ -1,6 +1,22 @@
 package org.launchcode.studio7;
 
-public class DVD {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class DVD extends BaseDisc {
+
+    private final ArrayList<String> leadActors = new ArrayList<>();
+
+    public DVD(String title, String author, String discType, String productionCo, String[] actorArray) {
+        super(title, author, discType, productionCo);
+        Collections.addAll(leadActors, actorArray);
+    }
+
+    public ArrayList<String> getLeadActors() {
+        return leadActors;
+    }
+
+
 
     // TODO: Implement your custom interface.
 
